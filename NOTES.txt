@@ -1,0 +1,2 @@
+Exercises to be completed:  org.prog3.lab2.generics.ex3
+                            org.prog3.lab2.polygon_generics.geometriesUse
