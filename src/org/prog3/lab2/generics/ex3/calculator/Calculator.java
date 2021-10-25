@@ -5,10 +5,12 @@ import java.util.List;
 
 public class Calculator {
 
+    //print a List of numerical elements
     public static void print(List<? extends Number> l){
         System.out.println(Arrays.toString(l.toArray()));
     }
 
+    //return the sum of the numerical elements in a list
     public static Number sum(List<? extends Number> l){
         var result = 0.0;
         for (Number n : l)
@@ -16,6 +18,7 @@ public class Calculator {
         return result;
     }
 
+    //return the maximum value among the numerical elements in a list
     public static Number max(List<? extends Number> l){
         var result = l.get(0);
         for(var number : l)
@@ -24,5 +27,3 @@ public class Calculator {
         return result;
     }
 }
-
-//ESERCIZIO INCOMPLETO -------------------------------------------------------------------------------------------------
