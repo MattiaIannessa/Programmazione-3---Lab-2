@@ -3,9 +3,7 @@ package org.prog3.lab2.kernel_module_pattern.test;
 import org.prog3.lab2.kernel_module_pattern.kernel.*;
 import org.prog3.lab2.kernel_module_pattern.module.*;
 
-import java.util.ArrayList;
-
-/* Simple application that tests SortableArray using a SortableArray of Strings
+/* Simple application that tests SortableArray using a SortableArray of String
  */
 public class StringSortableArrayTest {
 

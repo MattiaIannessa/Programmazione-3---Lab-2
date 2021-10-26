@@ -4,6 +4,8 @@ import org.prog3.lab2.kernel_module_pattern.kernel.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/* This is a module: implements SortableList interface using an ArrayList
+ */
 public class SortableListImpl<T extends Comparable<T>> implements SortableList<T> {
 
     ArrayList<T> list = new ArrayList<>();
