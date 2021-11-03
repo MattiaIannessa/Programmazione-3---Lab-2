@@ -8,7 +8,7 @@ import org.prog3.lab2.kernel_module_pattern.module.SortableListImpl;
 public class IntegerSortableArrayTest {
     public static void main(String[]args){
         SortableArray<Integer> array = new SortableArray<>();
-        array.addModule(new SortableListImpl<Integer>());
+        array.addModule(new SortableListImpl<>());
 
         array.add(45);
         array.add(4);
@@ -21,7 +21,7 @@ public class IntegerSortableArrayTest {
 
         array.remove(3);
 
-        System.out.println("---After remove---");
+        System.out.println("---After removing 3---");
         array.print();
 
         array.sort();

@@ -1,9 +1,10 @@
 package org.prog3.lab2.kernel_module_pattern.kernel;
 
+import org.prog3.lab2.kernel_module_pattern.module.SortableList;
+
 /* Kernel
  */
 public class SortableArray<T extends Comparable<T>> {
-
     /* Module to be used
      */
     private SortableList<T> module;

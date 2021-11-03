@@ -1,6 +1,5 @@
 package org.prog3.lab2.kernel_module_pattern.module;
 
-import org.prog3.lab2.kernel_module_pattern.kernel.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -8,7 +7,11 @@ import java.util.Collections;
  */
 public class SortableListImpl<T extends Comparable<T>> implements SortableList<T> {
 
-    ArrayList<T> list = new ArrayList<>();
+    private final ArrayList<T> list;
+
+    public SortableListImpl(){
+         list = new ArrayList<>();
+    }
 
     @Override
     public void add(T el) {
@@ -23,6 +26,11 @@ public class SortableListImpl<T extends Comparable<T>> implements SortableList<T
     @Override
     public void sort() {
         Collections.sort(list);
+
+        /* Alternative solution using lambda expression:
+         * list.sort((o1, o2) -> {return o1.compareTo(o2);});
+         *
+         */
     }
 
     @Override
