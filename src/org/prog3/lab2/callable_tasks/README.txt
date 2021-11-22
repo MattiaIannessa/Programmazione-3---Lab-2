@@ -1,0 +1,1 @@
+This program calculates maximum value in a matrix using a thread pool, with the purpose of speedup the execution.
